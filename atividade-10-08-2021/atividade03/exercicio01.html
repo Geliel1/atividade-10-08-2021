@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="C:\Repositorios-GuitHub\atividade-10-08-2021\atividade-10-08-2021\atividade03\css4.css">
+</head>
+
+<body>
+
+    <fieldset>
+        <h4>Manutenção do Órgão Colegiado</h4>
+
+
+
+        <table border="1">
+
+            <div id="div1">
+                <tr>
+                    <th>Unidade</th>
+                    <td>FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td>
+                </tr>
+            </div>
+
+            <div id="div2">
+                <tr>
+                    <th>Tipo Volegiado</th>
+                    <td>CONGREGADO</td>
+                </tr>
+            </div>
+
+        </table>
+
+
+        <h4 class="h4">Órgão Colegiado</h4>
+
+
+        <form action="">
+
+            <div id="div3">
+                <label for="nome">Nome</label>
+                <input class="borda" style="padding-left:100px ; padding-right: 100px;" type="text" id="nome" name="nome">
+            </div>
+
+
+            <div id="div4">
+                <label for="sigla">Sigla</label>
+                <input style="margin-left: 200px; padding: left 5px; padding-right: 5px;" class="borda" type="text" id="sigla" name="sigla">
+                <h5>Status</h5>
+                <select class="borda" name="selecionar" id="selecionar">
+    
+                    <option  value="Ativado">Marcar Status</option>  
+                    <option  value="Ativado">ATIVADO</option> 
+                     <option  value="Ativado">DESATIVADO</option>
+                </select>
+            </div>
+            <div id="div5">
+                <label for="data">Data Ativação</label>
+                <input class="borda" type="date" id="data" name="data">
+                <h5>Data <br> Desativação</h5>
+                <input style="margin-left: -26px;" class="borda" type="date" id="data" name="data">
+            </div>
+
+            <div id="div6">
+                <label for="orgaoOrigem">Órgao de Origem</label>
+                <input style="padding-left:100px ; padding-right: 100px;" class="borda" type="text">
+                <input class="borda" type="submit" id="orgaoOrigem" name="orgaoOrigem" value="Buscar">
+
+            </div>
+
+            <div id="div7">
+                <label for="orgaoSuperior">Órgao de Origem Superior</label>
+                <input style="padding-left:100px ; padding-right: 100px;" class="borda" type="text">
+                <input style="margin-right: 10px;" class="borda" type="submit" id="orgaoSuperior" name="orgaoSuperior" value="Buscar">
+
+            </div>
+
+            <div id="div8" style="display: flex; align-items: center;">
+                <label for="documentacao">Documentação</label>
+                <textarea name="documentacao" id="documentacao" cols="40" rows="3"></textarea>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <input style="margin-right: 150px ; border-radius: 1px; margin-left: 150px; margin-top: 29px; padding-left: 25px; padding-right: 25px; padding-bottom: 10px; padding-top: 10px;" type="submit" value="Enviar">
+                <input style=" border-radius: 1px; margin-left: 200px; margin-top: 29px; padding-left: 25px; padding-right: 25px; padding-bottom: 10px; padding-top: 10px;" type="submit" value="Excluir">
+            </div>
+
+
+        </form>
+
+    </fieldset>
+
+
+</body>
+
+</html>
